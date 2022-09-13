@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>java</title>
+	<link rel="stylesheet" href="java.css">
+</head>
+
+<body>
+
+
+
+
+	<div id="cr" style="text-align: center;">
+		<span class="ten"
+			style="background: rgb(255, 255, 255); display: inline-block; width: 20px; height: 20px; border: 2px solid gray;"
+			id="white" onclick="bgc('#FFFFFF')"></span>
+		<span class="ten"
+			style="background: #ffc0cb; display: inline-block; width: 20px; height: 20px; border: 2px solid gray;"
+			id="pink" onclick="bgc('#ffc0cb')"></span>
+		<span class="ten"
+			style="background: #A52A2A; display: inline-block; width: 20px; height: 20px; border: 2px solid gray;"
+			id="black" onclick="bgc('#A52A2A')"></span>
+	</div>
+
+	<div class="container" style="text-align: center;">
+		<h1>Mile to KM</h1>
+		<h3><span id="txt"></span> </h3>
+		mile
+		<input id="mail" type="number" name="">
+		km
+		<input id="km" type="number" name=""><br><br>
+		<button id="bt">submite</button>
+	</div>
+
+	<div class="container" style="text-align: center;">
+		<h1>Gram to KG</h1>
+		<h3><span id="tst"></span> </h3>
+		gram
+		<input id="gr" type="number" name="">
+		kg
+		<input id="kg" type="number" name=""><br><br>
+		<button id="btn">submite</button>
+		<div><span id="zx"></span></div>
+	</div>
+
+
+	<div class="container" style="text-align: center;">
+		<H1>CALCULATER</H1>
+		<div class="container" style="margin: auto;">
+			<table class="buttons" style="margin: auto;">
+				<input type="text" name="" id="screen"><br><br>
+				<tr>
+					<td><button id="cbtn">(</button> </td>
+					<td><button id="cbtn">)</button> </td>
+					<td><button id="cbtn">c</button> </td>
+					<td><button id="cbtn">%</button> </td>
+				</tr>
+				<tr>
+					<td><button id="cbtn">7</button> </td>
+					<td><button id="cbtn">8</button> </td>
+					<td><button id="cbtn">9</button> </td>
+					<td><button id="cbtn">x</button> </td>
+				</tr>
+				<tr>
+					<td><button id="cbtn">4</button> </td>
+					<td><button id="cbtn">5</button> </td>
+					<td><button id="cbtn">6</button> </td>
+					<td><button id="cbtn">-</button> </td>
+				</tr>
+				<tr>
+					<td><button id="cbtn">1</button> </td>
+					<td><button id="cbtn">2</button> </td>
+					<td><button id="cbtn">3</button> </td>
+					<td><button id="cbtn">+</button> </td>
+				</tr>
+				<tr>
+					<td><button id="cbtn">0</button> </td>
+					<td><button id="cbtn">.</button> </td>
+					<td><button id="cbtn">/</button> </td>
+					<td><button id="cbtn">=</button> </td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="metr" style="text-align: center;">
+		<h1>Temperature converter</h1>
+		<div id="container">
+			<div class="inb">
+				<label for="">celsius</label><br>
+				<input type="number" value="0" id="cel" class="inp">
+			</div>
+			<div class="inb">
+				<label for="">Fahrenheit</label><br>
+				<input type="number" value="32" id="fah" class="inp">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="tr" style="text-align:center ;">
+		<h1>text converter</h1>
+		<textarea name="" id="textarea" cols="30" rows="10"></textarea>
+		<p>
+			<span id="wd">0</span>words and
+			<span id="ch">0</span>charaters
+		</p>
+	</div>
+
+
+	<h1 style="text-align: center;">img slider</h1>
+	<div class="img-box" id="ib">
+		<div class="slider">
+			<img src="about-img.jpeg" alt="" id="crt">
+			<div class="cap">caption text 1</div>
+		</div>
+
+		<div class="slider">
+			<img src="blog-1.jpeg" alt="" id="crt">
+			<div class="cap">caption text 2</div>
+		</div>
+		<div class="slider">
+			<img src="blog-2.jpeg" alt="" id="crt">
+			<div class="cap">caption text 3</div>
+		</div>
+		<div class="slider">
+			<img src="blog-3.jpeg" alt="" id="crt">
+			<div class="cap">caption text 4</div>
+		</div>
+
+		<span class="aro" onclick="sid(-1)">&#10094;</span>
+		<span class="aro ri" onclick="sid(1)">&#10095;</span>
+	</div>
+
+	<div class="stopw">
+		<div id="tim">
+			<span class="dig" id="hr">00</span>
+			<span class="wt">Hr</span>
+			<span class="dig" id="min">00</span>
+			<span class="wt">min</span>
+			<span class="dig" id="sec">00</span>
+			<span class="wt">sec</span>
+			<span class="dig" id="count">00</span>
+		</div>
+		<div id="wbtn">
+			<button class="sbtn" id="str" onclick="start()">Start</button>
+			<button class="sbtn" id="sto" onclick="stop()">Stop</button>
+			<button class="sbtn" id="rts" onclick="reset()">Reset</button>
+		</div>
+	</div>
+     
+	<h1 style="text-align: center;">student grade calculate</h1>
+	<div class="school" style="text-align: center;">
+		<h1></h1>
+		<p class="per-text" id="pertext"></p>
+		<input type="number" placeholder="computer" id="compt"><br>
+		<input type="number" placeholder="math" id="math"><br>
+		<input type="number" placeholder="english" id="eng"><br>
+		<input type="number" placeholder="science" id="sci"><br>
+		<input type="submit" id="sci" placeholder="showpercentage" onclick="setper()">
+		
+	</div>
+
+	
+
+	<script type="text/javascript" src="java.js"></script>
+	
+</body>
+
+</html>
